@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.trebuchet.stress;
+package com.cmoatoto.trebuchet.stress;
 
 
-import com.cyanogenmod.trebuchet.Launcher;
+import com.cmoatoto.trebuchet.Launcher;
 
 import android.content.pm.ActivityInfo;
 import android.os.SystemClock;

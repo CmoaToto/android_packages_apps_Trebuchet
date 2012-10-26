@@ -19,7 +19,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cyanogenmod.trebuchet"
+    package="com.cmoatoto.trebuchet"
     android:versionName="@string/application_version">
 
     <original-package android:name="com.android.launcher2" />
@@ -61,15 +61,16 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="16"/>
 
     <application
-        android:name="com.cyanogenmod.trebuchet.LauncherApplication"
+        android:name="com.cmoatoto.trebuchet.LauncherApplication"
         android:label="@string/application_name"
         android:icon="@drawable/ic_launcher_home"
         android:hardwareAccelerated="@bool/config_hardwareAccelerated"
         android:largeHeap="@bool/config_largeHeap">
         <activity
-            android:name="com.cyanogenmod.trebuchet.Launcher"
+            android:name="com.cmoatoto.trebuchet.Launcher"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
             android:stateNotNeeded="true"
@@ -84,7 +85,7 @@
         </activity>
 
         <activity
-            android:name="com.cyanogenmod.trebuchet.WallpaperChooser"
+            android:name="com.cmoatoto.trebuchet.WallpaperChooser"
             style="@style/Theme.WallpaperPicker"
             android:label="@string/pick_wallpaper"
             android:icon="@drawable/ic_launcher_wallpaper"
@@ -98,7 +99,7 @@
                 android:resource="@xml/wallpaper_picker_preview" />
         </activity>
 
-        <activity android:name="com.cyanogenmod.trebuchet.RocketLauncher"
+        <activity android:name="com.cmoatoto.trebuchet.RocketLauncher"
             android:label="@string/dream_name"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
@@ -110,23 +111,23 @@
 
         <!-- Intent received used to prepopulate the default workspace. -->
         <receiver
-            android:name="com.cyanogenmod.trebuchet.PreloadReceiver"
+            android:name="com.cmoatoto.trebuchet.PreloadReceiver"
             android:permission="com.android.launcher.permission.PRELOAD_WORKSPACE">
             <intent-filter>
                 <action android:name="com.android.launcher.action.PRELOAD_WORKSPACE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.cyanogenmod.trebuchet.preference.Preferences"
+        <activity android:name="com.cmoatoto.trebuchet.preference.Preferences"
             android:label="@string/preferences_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.cyanogenmod.category.LAUNCHER_PREFERENCES" />
+                <category android:name="com.cmoatoto.category.LAUNCHER_PREFERENCES" />
             </intent-filter>
         </activity>
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="com.cyanogenmod.trebuchet.InstallShortcutReceiver"
+            android:name="com.cmoatoto.trebuchet.InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
@@ -135,7 +136,7 @@
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
-            android:name="com.cyanogenmod.trebuchet.UninstallShortcutReceiver"
+            android:name="com.cmoatoto.trebuchet.UninstallShortcutReceiver"
             android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
@@ -144,8 +145,8 @@
 
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
-            android:name="com.cyanogenmod.trebuchet.LauncherProvider"
-            android:authorities="com.cyanogenmod.trebuchet.settings"
+            android:name="com.cmoatoto.trebuchet.LauncherProvider"
+            android:authorities="com.cmoatoto.trebuchet.settings"
             android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
             android:readPermission="com.android.launcher.permission.READ_SETTINGS" />
 
