@@ -117,7 +117,7 @@
         <!-- Dock -->
         <PreferenceScreen android:key="ui_dock"
             android:title="@string/preferences_interface_dock_title">
-            <com.cmoatoto.trebuchet.preference.NumberPickerPreference android:key="ui_homescreen_general_hotseat_size"
+            <com.cmoatoto.trebuchet.preference.NumberPickerPreference android:key="ui_dock_hotseat_size"
                 android:title="@string/preferences_interface_dock_size_title"
                 android:summary="@string/preferences_interface_dock_size_summary"
                 android:defaultValue="@integer/hotseat_cell_count"

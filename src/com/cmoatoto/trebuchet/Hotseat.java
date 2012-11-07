@@ -62,7 +62,8 @@ public class Hotseat extends FrameLayout {
         int defaultHotseatIcon = PreferencesProvider.Interface.Dock.getDefaultHotseatIcon(context,
                 context.getResources().getInteger(R.integer.hotseat_all_apps_index));
         if (defaultHotseatIcon >= numberHotseatIcons) {
-            defaultHotseatIcon = numberHotseatIcons / 2;
+            defaultHotseatIcon = numberHotseatIcons - 1;
+            PreferencesProvider.Interface.Dock.setDefaultHotseatIcon(context, defaultHotseatIcon);
         }
 
         mIsLandscape = context.getResources().getConfiguration().orientation ==
