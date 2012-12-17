@@ -1214,6 +1214,8 @@ public class LauncherModel extends BroadcastReceiver {
 
                                     // check & update map of what's occupied
                                     if (!checkItemPlacement(occupied, info)) {
+                                        id = c.getLong(idIndex);
+                                        itemsToRemove.add(id);
                                         break;
                                     }
 

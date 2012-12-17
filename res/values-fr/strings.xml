@@ -71,7 +71,7 @@
     <string name="menu_preferences">"Paramètres de Trebuchet"</string>
     <string name="menu_help" msgid="4901160661634590633">"Aide"</string>
     <string name="menu_apps_sort_title">"Nom"</string>
-    <string name="menu_apps_sort_install_date">"Date d'installation"</string>
+    <string name="menu_apps_sort_install_date">"Date d\'installation"</string>
     <string name="cab_menu_delete_app" msgid="4089398025537640349">"Désinstaller l\'application"</string>
     <string name="cab_menu_app_info" msgid="914548323652698884">"Détails de l\'application"</string>
     <string name="cab_app_selection_text" msgid="6378522164293415735">"1 application sélectionnée."</string>
@@ -144,7 +144,7 @@
     <string name="preferences_interface_homescreen_general_screen_padding_horizontal_title">Marge horizontale</string>
     <string name="preferences_interface_homescreen_general_screen_padding_horizontal_summary">Espacement supplémentaire horizontal</string>
     <string name="preferences_interface_homescreen_general_search_summary">Activer la barre de recherche persistante</string>
-    <string name="preferences_interface_homescreen_general_resize_any_widget_title">Redimensionner tout les widgets</string>
+    <string name="preferences_interface_homescreen_general_resize_any_widget_title">Redimensionner tous les widgets</string>
     <string name="preferences_interface_homescreen_general_resize_any_widget_summary">Permet de redimensionner les widgets qui normalement n\'en sont pas capables</string>
     <string name="preferences_interface_homescreen_general_hide_icon_labels_title">Sans libellés</string>
     <string name="preferences_interface_homescreen_general_hide_icon_labels_summary">Cacher le libellé des icônes de l\'écran d\'accueil</string>
