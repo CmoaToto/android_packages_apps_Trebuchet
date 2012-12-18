@@ -19,7 +19,6 @@
     xmlns:launcher="http://schemas.android.com/apk/res/com.cmoatoto.trebuchet"
 
     android:id="@+id/drag_layer"
-    android:background="@drawable/workspace_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -53,7 +52,7 @@
         android:layout_marginRight="@dimen/button_bar_height"
         android:layout_gravity="right" />
     <include
-        android:id="@+id/paged_view_indicator"
+        android:id="@+id/paged_view_indicator_horizontal"
         layout="@layout/scroll_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +71,8 @@
         android:id="@+id/voice_button_proxy"
         android:layout_width="@dimen/qsb_bar_height"
         android:layout_height="@dimen/app_icon_size"
-        android:layout_gravity="bottom|left"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="64dp"
         android:clickable="true"
         android:onClick="onClickVoiceButton"
         android:importantForAccessibility="no"

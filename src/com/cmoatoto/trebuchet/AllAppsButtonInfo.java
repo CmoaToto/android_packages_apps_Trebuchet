@@ -30,6 +30,6 @@ class AllAppsButtonInfo extends ItemInfo {
         return "AllAppsButtonInfo(id=" + this.id + " type=" + this.itemType
                 + " container=" + this.container + " screen=" + screen
                 + " cellX=" + cellX + " cellY=" + cellY + " spanX=" + spanX + " spanY=" + spanY
-                + " isGesture=" + isGesture + " dropPos=" + dropPos + ")";
+                + " dropPos=" + dropPos + ")";
     }
 }

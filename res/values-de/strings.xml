@@ -42,7 +42,7 @@
     <string name="group_wallpapers" msgid="1568191644272224858">"Hintergründe"</string>
     <string name="completely_out_of_space" msgid="1759078539443491182">"Auf Ihrem Startbildschirm ist kein Platz mehr vorhanden."</string>
     <string name="out_of_space" msgid="8365249326091984698">"Auf dem Startbildschirm ist kein Platz mehr vorhanden."</string>
-    <string name="hotseat_out_of_space" msgid="6304886797358479361">"Auf der App-Leiste ist kein Platz mehr vorhanden."</string>
+    <string name="hotseat_out_of_space" msgid="6304886797358479361">"Kein Platz mehr auf der App-Leiste"</string>
     <string name="invalid_hotseat_item" msgid="6545340627805449250">"Dieses Widget ist zu groß für die App-Leiste."</string>
     <string name="shortcut_installed" msgid="7071557296331322355">"\"<xliff:g id="NAME">%s</xliff:g>\"-Verknüpfung wurde erstellt."</string>
     <string name="shortcut_uninstalled" msgid="2129499669449749995">"\"<xliff:g id="NAME">%s</xliff:g>\"-Verknüpfung wurde entfernt."</string>
@@ -189,8 +189,16 @@
     <string name="preferences_interface_homescreen_general_hide_icon_labels_title">Beschriftung nicht anzeigen</string>
     <string name="preferences_interface_homescreen_general_hide_icon_labels_summary">Beschriftung unterhalb der Icons nicht anzeigen</string>
     <string name="preferences_interface_homescreen_scrolling_category">Scrollen</string>
+    <string name="preferences_interface_homescreen_scrolling_transition_effect_title">Übergangsanimation</string>
+    <string name="preferences_interface_homescreen_scrolling_transition_effect_summary">Animation beim Scrollen zwischen den Seiten</string>
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_title">Hintergrundbild scrollen</string>
     <string name="preferences_interface_homescreen_scrolling_scroll_wallpaper_summary">Hintergrundbild bei Seitenwechsel scrollen</string>
+    <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_title">Hintergrundbild schneller rendern</string>
+    <string name="preferences_interface_homescreen_scrolling_wallpaper_hack_summary">Flüssigere Darstellung von statischen Hintergrundbildern</string>
+    <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_title">Seiten einblenden</string>
+    <string name="preferences_interface_homescreen_scrolling_fade_adjacent_screens_summary">Beim Scrollen die Seiten einblenden</string>
+    <string name="preferences_interface_homescreen_scrolling_show_outlines_title">Umriss anzeigen</string>
+    <string name="preferences_interface_homescreen_scrolling_show_outlines_summary">Beim Scrollen den Umriss der Seite anzeigen</string>
     <string name="preferences_interface_homescreen_indicator_category">Seitenindikator</string>
     <string name="preferences_interface_homescreen_indicator_enable_title">Anzeigen</string>
     <string name="preferences_interface_homescreen_indicator_enable_summary">Seitenindikator anzeigen</string>
@@ -202,6 +210,11 @@
     <string name="preferences_interface_drawer_widgets_category">Widget-Seiten</string>
     <string name="preferences_interface_drawer_widgets_join_apps_title">Mit App-Seiten verbinden</string>
     <string name="preferences_interface_drawer_widgets_join_apps_summary">Blättern auch zwischen App- und Widget-Seiten</string>
+    <string name="preferences_interface_drawer_scrolling_category">Scrollen</string>
+    <string name="preferences_interface_drawer_scrolling_transition_effect_title">Übergangsanimation</string>
+    <string name="preferences_interface_drawer_scrolling_transition_effect_summary">Animation beim Scrollen zwischen den Seiten</string>
+    <string name="preferences_interface_drawer_scrolling_fade_adjacent_screens_title">Seiten einblenden</string>
+    <string name="preferences_interface_drawer_scrolling_fade_adjacent_screens_summary">Beim Scrollen die Seiten einblenden</string>
     <string name="preferences_interface_drawer_indicator_category">Seitenindikator</string>
     <string name="preferences_interface_drawer_indicator_enable_title">Anzeigen</string>
     <string name="preferences_interface_drawer_indicator_enable_summary">Seitenindikator anzeigen</string>

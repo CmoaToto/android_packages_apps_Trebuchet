@@ -18,6 +18,7 @@ package com.cmoatoto.trebuchet;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -39,6 +40,8 @@ public class Hotseat extends FrameLayout {
     private int mCellCountX;
     private int mCellCountY;
     private int mAllAppsButtonRank;
+
+    private boolean mTransposeLayoutWithOrientation;
     private boolean mIsLandscape;
 
     private static final int DEFAULT_CELL_COUNT_X = 5;
@@ -65,7 +68,9 @@ public class Hotseat extends FrameLayout {
             defaultHotseatIcon = numberHotseatIcons - 1;
             PreferencesProvider.Interface.Dock.setDefaultHotseatIcon(context, defaultHotseatIcon);
         }
-
+        Resources r = context.getResources();
+        mTransposeLayoutWithOrientation = 
+                r.getBoolean(R.bool.hotseat_transpose_layout_with_orientation);
         mIsLandscape = context.getResources().getConfiguration().orientation ==
             Configuration.ORIENTATION_LANDSCAPE;
 
@@ -88,16 +93,20 @@ public class Hotseat extends FrameLayout {
         return mContent;
     }
 
+    private boolean hasVerticalHotseat() {
+        return (mIsLandscape && mTransposeLayoutWithOrientation);
+    }
+
     /* Get the orientation invariant order of the item in the hotseat for persistence. */
     int getOrderInHotseat(int x, int y) {
-        return mIsLandscape ? (mContent.getCountY() - y - 1) : x;
+        return hasVerticalHotseat() ? (mContent.getCountY() - y - 1) : x;
     }
     /* Get the orientation specific coordinates given an invariant order in the hotseat. */
     int getCellXFromOrder(int rank) {
-        return mIsLandscape ? 0 : rank;
+        return hasVerticalHotseat() ? 0 : rank;
     }
     int getCellYFromOrder(int rank) {
-        return mIsLandscape ? (mContent.getCountY() - (rank + 1)) : 0;
+        return hasVerticalHotseat() ? (mContent.getCountY() - (rank + 1)) : 0;
     }
     public boolean isAllAppsButtonRank(int rank) {
         return rank == mAllAppsButtonRank;

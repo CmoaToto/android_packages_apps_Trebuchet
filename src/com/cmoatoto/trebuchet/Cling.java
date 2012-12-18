@@ -31,7 +31,6 @@ import android.util.DisplayMetrics;
 import android.view.FocusFinder;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.accessibility.AccessibilityManager;
 import android.widget.FrameLayout;
 
 import com.cmoatoto.trebuchet.R;
@@ -88,6 +87,8 @@ public class Cling extends FrameLayout {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Cling, defStyle, 0);
         mDrawIdentifier = a.getString(R.styleable.Cling_drawIdentifier);
         a.recycle();
+
+        setClickable(true);
     }
 
     void init(Launcher l, int[] positionData) {
@@ -155,13 +156,9 @@ public class Cling extends FrameLayout {
         return new int[]{-1, -1};
     }
 
-    public View findViewToTakeAccessibilityFocusFromHover(View child, View descendant) {
-        return null;
-    }
-
     @Override
     public View focusSearch(int direction) {
-        return this.focusSearch(null, direction);
+        return this.focusSearch(this, direction);
     }
 
     @Override
